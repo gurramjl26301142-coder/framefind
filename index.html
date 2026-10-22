@@ -1,0 +1,57 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FrameFind</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h2>FrameFind.</h2>
+    <p>A little inspiration, one search away.</p>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">VISUAL DISCOVERY</p>
+      <h1>Find a picture.<br><span>Find a new perspective.</span></h1>
+      <p>Discover ideas, places, and moments through images.</p>
+
+      <form id="searchForm">
+        <label for="searchInput">What are you looking for?</label>
+        <div class="search-row">
+          <input type="search" id="searchInput" placeholder="Try mountains, sunsets, art...">
+          <button type="submit" id="searchButton">Search</button>
+        </div>
+      </form>
+
+      <p class="quick-title">QUICK PICKS</p>
+      <div class="chips">
+        <button type="button" class="chip">Nature</button>
+        <button type="button" class="chip">Cities</button>
+        <button type="button" class="chip">Animals</button>
+        <button type="button" class="chip">Architecture</button>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <h2>Your discoveries</h2>
+      <p id="resultCount">Your gallery is waiting</p>
+
+      <div id="results" class="results-grid"></div>
+
+      <div id="emptyState">
+        <h3>✳ Your canvas is empty</h3>
+        <p>Your next favorite image starts with a search.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made for curious minds. © 2026 FrameFind</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
